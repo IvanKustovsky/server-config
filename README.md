@@ -1,1 +1,1 @@
-Serveg config for my Microservice course learning
+Serveg config for my Diploma project
