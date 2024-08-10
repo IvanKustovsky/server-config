@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/e2rent
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: password
+  
+logging:
+  level:
+    com:
+      example:
+        user_service: WARN
