@@ -7,3 +7,30 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: "equipments"
+    description: "E2Rent Equipments Application"
+    version: "1.0.0"
