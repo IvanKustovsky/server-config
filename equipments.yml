@@ -4,6 +4,6 @@ server:
 spring:
   jpa:
     open-in-view: false
-  hibernate:
+    hibernate:
       ddl-auto: update
     show-sql: true
