@@ -1,12 +1,11 @@
 server:
-  port: 8080
+  port: 8095
 
 spring:
-  jpa:
-    open-in-view: false
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
 
 eureka:
   instance:
@@ -40,6 +39,6 @@ management:
 
 info:
   app:
-    name: "users"
-    description: "E2Rent Users Application"
+    name: "identity-service"
+    description: "E2Rent Identity-Service Application"
     version: "1.0.0"
