@@ -27,3 +27,10 @@ info:
     name: "gateway-service"
     description: "E2Rent Gateway Server Application"
     version: "1.0.0"
+
+open-api:
+  endpoints:
+    - /auth/api/v1/token
+    - /auth/api/v1/validate
+    - /equipments/api/v1/all
+    - /users/api/v1/register
