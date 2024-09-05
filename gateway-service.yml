@@ -1,5 +1,5 @@
 server:
-  port: 9010
+  port: 8080
 
 eureka:
   instance:
@@ -32,5 +32,6 @@ open-api:
   endpoints:
     - /auth/api/v1/token
     - /auth/api/v1/validate
+    - /auth/api/v1/email
     - /equipments/api/v1/all
     - /users/api/v1/register
