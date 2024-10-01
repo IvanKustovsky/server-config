@@ -4,9 +4,23 @@ spring:
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: password
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: "http://localhost:8020/realms/e2rent_dev/protocol/openid-connect/certs"
 
 logging:
   level:
     com:
       example:
         user_service: INFO
+
+keycloak:
+  realm: "e2rent_dev"
+  domain: "localhost:8020"
+  adminClientId: ${KEYCLOAK_ADMIN_CLIENT_ID}
+  adminClientSecret: ${KEYCLOAK_ADMIN_CLIENT_SECRET}
+  client:
+    id: ${KEYCLOAK_CLIENT_ID}
+    secret: ${KEYCLOAK_CLIENT_SECRET}
