@@ -36,8 +36,13 @@ management:
       enabled: true
     liveness-state:
       enabled: true
-    
 
+logging:
+  level:
+    com:
+      example:
+        equipment: INFO
+    
 info:
   app:
     name: "equipments"

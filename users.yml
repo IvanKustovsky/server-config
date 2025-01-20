@@ -41,6 +41,12 @@ management:
     liveness-state:
       enabled: true
 
+logging:
+  level:
+    com:
+      example:
+        user_service: INFO
+
 info:
   app:
     name: "users"

@@ -4,9 +4,3 @@ spring:
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: password
-  
-logging:
-  level:
-    com:
-      example:
-        equipment: INFO

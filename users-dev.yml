@@ -8,13 +8,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: "http://host.docker.internal:8020/realms/e2rent_dev/protocol/openid-connect/certs"
-
-logging:
-  level:
-    com:
-      example:
-        user_service: INFO
+          jwk-set-uri: "http://localhost:8020/realms/e2rent_dev/protocol/openid-connect/certs"
 
 keycloak:
   realm: "e2rent_dev"
