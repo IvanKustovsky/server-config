@@ -8,7 +8,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: "http://localhost:8020/realms/e2rent_dev/protocol/openid-connect/certs"
+          jwk-set-uri: ${SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK_SET_URI:http://localhost:8020/realms/e2rent_dev/protocol/openid-connect/certs}
 
 keycloak:
   realm: "e2rent_dev"
