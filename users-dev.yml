@@ -13,8 +13,5 @@ spring:
 keycloak:
   realm: "e2rent_dev"
   domain: "localhost:8020"
-  adminClientId: ${KEYCLOAK_ADMIN_CLIENT_ID}
-  adminClientSecret: ${KEYCLOAK_ADMIN_CLIENT_SECRET}
-  client:
-    id: ${KEYCLOAK_CLIENT_ID}
-    secret: ${KEYCLOAK_CLIENT_SECRET}
+  restApiClientId: ${KEYCLOAK_REST_API_CLIENT_ID}
+  restApiClientSecret: ${KEYCLOAK_REST_API_CLIENT_SECRET}
