@@ -38,6 +38,9 @@ management:
     env:
       enabled: true
 
+keycloak:
+  uri: ${KEYCLOAK_URI:http://localhost:8020}
+
 info:
   app:
     name: "gateway-service"
