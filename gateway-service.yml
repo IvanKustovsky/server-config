@@ -8,6 +8,18 @@ spring:
         locator:
           lower-case-service-id: true
           enabled: false
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:3000"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
     openfeign:
       circuitbreaker:
         enabled: true
