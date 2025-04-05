@@ -40,7 +40,7 @@ management:
 logging:
   level:
     com:
-      example:
+      e2rent:
         equipment: INFO
     
 info:

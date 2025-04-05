@@ -1,0 +1,6 @@
+keycloak:
+  realm: "e2rent_dev"
+  domain: "localhost:8020"
+  url: "http://${keycloak.domain}"
+  restApiClientId: ${KEYCLOAK_REST_API_CLIENT_ID}
+  restApiClientSecret: ${KEYCLOAK_REST_API_CLIENT_SECRET}

@@ -8,5 +8,5 @@ spring:
 logging:
   level:
     com:
-      example:
+      e2rent:
         user_service: WARN

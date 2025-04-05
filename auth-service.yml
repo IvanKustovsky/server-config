@@ -1,16 +1,16 @@
 server:
-  port: 8085
+  port: 8585
 
 spring:
-  jpa:
-    open-in-view: false
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: ${SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK_SET_URI:http://localhost:8020/realms/e2rent_dev/protocol/openid-connect/certs}
   cloud:
     openfeign:
       circuitbreaker:
-        enabled: true  
+        enabled: true
 
 eureka:
   instance:
@@ -45,10 +45,10 @@ logging:
   level:
     com:
       e2rent:
-        user_service: INFO
+        auth_service: INFO
 
 info:
   app:
-    name: "users"
-    description: "E2Rent Users Application"
+    name: "auth-service"
+    description: "E2Rent Authentication Application"
     version: "1.0.0"
