@@ -60,6 +60,7 @@ info:
 open-api:
   endpoints:
     - /equipments/api/v1/all
+    - /equipments/api/v1/images
     - /users/api/v1/register
     - /auth/api/v1/login
     - /auth/api/v1/refresh
