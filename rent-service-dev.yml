@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rentapp
+    username: postgres
+    password: password
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: ${SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK_SET_URI:http://localhost:8020/realms/e2rent_dev/protocol/openid-connect/certs}
