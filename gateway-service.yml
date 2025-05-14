@@ -63,6 +63,7 @@ open-api:
     - ^/advertisement/api/v1/approved/user/[0-9]+$
     - ^/equipments/api/v1/images/[0-9]+$
     - ^/equipments/api/v1/[0-9]+$
+    - ^/equipments/api/v1/categories-with-subcategories$
     - ^/users/api/v1/register$
     - ^/auth/api/v1/login$
     - ^/auth/api/v1/refresh$
